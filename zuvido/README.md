@@ -1,3 +1,49 @@
+# 🧩 Descrição das Pastas
+
+| Pasta | Função | Exemplo |
+|--------|--------|----------|
+| **api/** | Comunicação com o backend (HTTP, Firebase, etc.) | `menuApi.ts` faz fetch dos pratos |
+| **models/** | Define os tipos e modelos de dados | `interface Dish { id; name; price; }` |
+| **services/** | Lógica de negócio (ex: filtrar pratos, calcular total) | `menuService.ts` |
+| **navigation/** | Gerencia as rotas e tipos de navegação | `NavigationTypes.ts`, `AppNavigator.tsx` |
+| **screens/** | Telas principais do app | `HomeScreen.tsx`, `MenuScreen.tsx` |
+| **components/** | Componentes reutilizáveis | `Button.tsx`, `DishCard.tsx` |
+| **hooks/** | Hooks personalizados | `useMenu()`, `useSpeech()` |
+| **context/** | Estados globais (tema, acessibilidade, usuário) | `AccessibilityContext.tsx` |
+| **utils/** | Funções auxiliares gerais | `formatPrice()`, `validateInput()` |
+
+---
+
+## 🧠 Arquitetura Utilizada
+
+View (Screen)<br>
+   ↓ usa<br>
+ViewModel (Hook ou Context)<br>
+   ↓ chama<br>
+Service (lógica de negócio)<br>
+   ↓ consulta<br>
+API / Model (dados)<br>
+
+# 🧩 Arquitetura MVVM
+
+O **MVVM (Model–View–ViewModel)** é um padrão de arquitetura de software que separa a lógica de negócios da lógica de apresentação, tornando o código mais organizado, reutilizável e fácil de manter.
+
+---
+
+## ⚙️ Estrutura do MVVM
+
+| **Camada** | **O que ela faz** | **O que não deve fazer** |
+|-------------|-------------------|----------------------------|
+| **Model** | Contém **dados** e **regras de negócio** (ex: salvar no banco, validar usuário, acessar API, etc). | Não deve saber nada sobre **interface** (botões, telas, etc). |
+| **View** | Mostra **dados** e **recebe ações do usuário** (ex: cliques, campos, telas). | Não deve conter **lógica de negócio** — apenas **exibição**. |
+| **ViewModel** | Faz a **ponte entre a View e o Model**. Contém a **lógica de apresentação**, ou seja, **como os dados devem ser mostrados ou atualizados na tela**. | Não deve conter **regras de negócio complexas** nem **rotas diretas**. |
+
+---
+
+## 🔄 Fluxo de Comunicação
+
+---
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
