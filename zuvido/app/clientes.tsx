@@ -22,7 +22,7 @@ function MenuButton({ title, subtitle, icon, onPress, isHovered, onHover }: {
         <MaterialCommunityIcons
           name={icon}
           size={36}
-          color={isHovered ? "#FFEE93" : "#000"}
+          color={isHovered ? "#e80303ff" : "#000"}
         />
       </View>
       <View style={styles.textContainer}>
@@ -44,7 +44,7 @@ export default function ClienteScreen() {
   const menuItems = [
     {
       id: 'qrcode',
-      title: 'QR Code',
+      title: 'QRw Code',
       subtitle: 'Escaneie o código do cardápio',
       icon: 'qrcode-scan' as const,
       route: '/qrcode',
@@ -70,7 +70,7 @@ export default function ClienteScreen() {
 
 
       <Image
-        source={require("../../screens/images/logo.png")}
+        source={require("../components/images/logo.png")}
         style={styles.logo}
         resizeMode="contain"
       />

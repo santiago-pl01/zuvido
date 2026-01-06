@@ -11,7 +11,7 @@ export default function AppLayout() {
       <Stack.Screen 
         name="clientes" 
         options={{
-          title: 'Menu Acessível',
+          title: 'Menu Acessível aaaaaaaaaaaa',
         }} 
       />
     </Stack>
