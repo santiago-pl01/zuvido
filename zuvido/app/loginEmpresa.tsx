@@ -38,6 +38,7 @@ export default function MenuAcessivel() {
         keyboardType="email-address"
         autoCapitalize="none"
       />
+      
 
       
       <TouchableOpacity onPress={() => router.push("/")}>

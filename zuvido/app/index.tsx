@@ -61,18 +61,18 @@ const styles = StyleSheet.create({
   },
 
   botaoGrande: {
-    width: width * 0.75,
-    height: width * 0.75,
-    backgroundColor: "#4F46E5",
-    borderRadius: 20,
+     width: "85%",
+    height: 70,
+    backgroundColor: "#4F46E5", // azul moderno
+    borderRadius: 16,
     justifyContent: "center",
     alignItems: "center",
-    elevation: 6,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-  },
+    elevation: 5, // sombra Android
+    shadowColor: "#000", // sombra iOS
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+  }
 
 
 });
