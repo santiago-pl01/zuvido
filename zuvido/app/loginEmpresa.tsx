@@ -45,6 +45,10 @@ export default function MenuAcessivel() {
         <Text>voltar</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => router.push("../empresa/tela_inicial")}>
+        <Text>teste</Text>
+      </TouchableOpacity>
+
     </View>
   );
 }
