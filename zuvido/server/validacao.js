@@ -8,5 +8,5 @@ if (!status.isValid) {
   // If a criterion is undefined, it is not required by policy. If the
   // criterion is defined but false, it is required but not fulfilled by
   // the given password. For example:
-  const needsLowerCase = status.containsLowercaseLetter !== true;
+  const needsLowerCase = status.containsLowercaseLetter !== true; // true if lowercase letters are required but missing
 }
